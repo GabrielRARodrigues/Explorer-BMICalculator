@@ -14,6 +14,7 @@
   --ot-input: #02799d;
   --bd-input: rgba(73, 80, 87, 0.3);
   --tt-placeholder: rgba(73, 80, 87, 0.5);
+  --bg-input: #dce2e9;
 
   --tt-button: #fff;
   --bg-button: #02799d;
@@ -39,6 +40,46 @@ body {
   background: white;
   max-width: 42.8rem;
   margin-inline: auto;
+
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   border-radius: 0.6rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: var(--tt-heading);
+}
+
+form h1 {
+  margin-bottom: 3.2rem;
+}
+
+form label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--tt-label);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  border: 1px solid var(--bd-input);
+  background-color: var(--bg-input);
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  color: var(--tt-input);
+  line-height: 2rem;
+}
+
+form input:focus {
+  outline: 2px solid var(--ot-input);
+}
+
+form input::placeholder{
+  color: var(--tt-placeholder);
+}
+.input-wrapper + .input-wrapper {
+  margin-top: 1.6rem;
 }
