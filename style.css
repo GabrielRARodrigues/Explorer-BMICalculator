@@ -181,5 +181,5 @@ form button:hover {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-30px);
-  transition: transform 0.5s;
+  transition: 0.5s;
 }
